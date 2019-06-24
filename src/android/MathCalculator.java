@@ -17,8 +17,7 @@ public class MathCalculator extends CordovaPlugin {
         if(action.equals("add")){
             this.add(args, callbackContext);
             return true;
-        }
-        if(action.equals("sub")){
+        }else if(action.equals("sub")){
             this.sub(args, callbackContext);
             return true;
         }
