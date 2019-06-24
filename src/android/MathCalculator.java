@@ -27,8 +27,8 @@ public class MathCalculator extends CordovaPlugin {
     private void add(JSONArray args, CallbackContext callbackContext) {
         if (args != null) {
             try {
-                int p1 = Interget.parseInt(args.getJSONObject(0).getString("param1"));
-                int p2 = Interget.parseInt(args.getJSONObject(0).getString("param2"));
+                int p1 = Integer.parseInt(args.getJSONObject(0).getString("param1"));
+                int p2 = Integer.parseInt(args.getJSONObject(0).getString("param2"));
 
                 callbackContext.success(""+(p1+p2));
 
